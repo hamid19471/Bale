@@ -1,0 +1,14 @@
+:root {
+  --clr--primary-500: #49dbae;
+  --clr--primary-200: #2bfca4;
+  --clr--seceondry: #313872;
+  --clr--text-100: #5e6c84;
+  --clr--text-200: #42526e;
+  --clr--text-300: #2f3776;
+  --clr--text-400: #161c4e;
+  --clr--text-600: #091e42;
+  --clr--gray: #8e93bc4d;
+  --clr--muted--text: #c6d5de3d;
+  --clr--rinbow-gr: linear-gradient(-90deg, #8667d0, #cd42a7, #e94c79, #f88c5e);
+  --clr--white: #fff;
+}
