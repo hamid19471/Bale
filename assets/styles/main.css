@@ -12,3 +12,29 @@
   --clr--rinbow-gr: linear-gradient(-90deg, #8667d0, #cd42a7, #e94c79, #f88c5e);
   --clr--white: #fff;
 }
+@font-face {
+  font-family: "IranSansUltraLight";
+  src: url("../Fonts/IRANSansWeb_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IranSansLight";
+  src: url("../Fonts/IRANSansWeb_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IranSansMedium";
+  src: url("../Fonts/IRANSansWeb_Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IranSansBold";
+  src: url("../Fonts/IRANSansWeb_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IranSansBlack";
+  src: url("../Fonts/IRANSansWeb_Black.ttf") format("truetype");
+}
+
+html {
+  font-family: "IranSansUltraLight";
+}
