@@ -1,0 +1,56 @@
+html {
+  font-family: "IranSansMedium";
+  font-size: 62.5%;
+}
+
+.header {
+  background-color: #f7f7f7;
+}
+.navbar {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 6rem;
+  padding: 1.2rem 0.785rem;
+}
+
+.navbar__contact {
+  display: flex;
+  gap: 2rem;
+}
+.navbar__contact__text {
+  font-size: 1.4rem;
+  color: var(--clr--text-200);
+}
+.bale__logo {
+  width: 22px;
+  height: auto;
+}
+
+.arbain__logo {
+  height: 3.6rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    max-height: 9.6rem;
+    padding: 1.2rem 3.6rem;
+  }
+  .navbar__contact__text {
+    font-size: 1.8rem;
+  }
+  .arbain__logo {
+    height: 6.4rem;
+  }
+  .bale__logo {
+    width: 3.2rem;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .navbar {
+    width: 1240px;
+  }
+}
