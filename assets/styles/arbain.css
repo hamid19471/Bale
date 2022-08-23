@@ -7,6 +7,16 @@ html {
   max-width: 1240px;
   margin: 0 auto;
 }
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .btn--primary {
   color: var(--clr--white);
   background-color: var(--clr--primary-500);
@@ -42,52 +52,65 @@ html {
   height: 3.6rem;
 }
 
-.container-w {
-  padding: 1.785rem 2rem;
-}
+/* section */
 .stepone {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
+  padding: 1.2rem 2.2rem;
 }
 .stepone__text {
   font-size: 1.6rem;
+  font-weight: normal;
   line-height: 2.6rem;
   text-align: justify;
-  padding: 1rem 1.2rem;
-  font-family: "IranSansMedium";
   color: var(--clr--text-200);
+  margin-bottom: 2rem;
 }
 .stepone__btn {
-  font-size: 1.5rem;
-  height: 5.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 95vw;
-  border-radius: 16px;
+  height: 5.4rem;
+  font-size: 1.8rem;
+  border-radius: 1.6rem;
+  width: 100%;
 }
 .stepone__title {
-  color: var(--clr--text-600);
   font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  color: var(--clr--text-600);
 }
-
 .stepone__img {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
-img {
-  width: 100%;
-  height: 100%;
+.stepone__title__desktop {
+  display: none;
 }
-
-@media only screen and (min-width: 375px) {
+@media screen and (min-width: 375px) {
   .stepone {
     flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-desk {
+    max-width: 1290px;
+    height: 430px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contenet {
+    width: 48%;
+  }
+  .stepone__img {
+    margin-top: 4rem;
+  }
+  .container-desk {
+    height: auto;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -104,6 +127,20 @@ img {
   .bale__logo {
     width: 3.2rem;
     height: auto;
+  }
+
+  .stepone {
+    flex-direction: row;
+  }
+  .stepone__title {
+    display: none;
+  }
+  .stepone__title__desktop {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: var(--clr--text-600);
   }
 }
 
