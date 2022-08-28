@@ -42,6 +42,10 @@ li {
   src: url("../Fonts/Shabnam-Light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'ShabnamBold';
+  src: url("../Fonts/Shabnam-Bold.ttf") format('truetype');
+}
 
 :root {
   --clr--primary-500: #0aca9b;
@@ -52,6 +56,7 @@ li {
   --clr--text-300: #2f3776;
   --clr--text-400: #161c4e;
   --clr--text-600: #091e42;
+  --clr--card-bg: #fafbfc;
   --clr--gray: #8e93bc4d;
   --clr--muted--text: #c6d5de3d;
   --clr--rinbow-gr: linear-gradient(-90deg, #8667d0, #cd42a7, #e94c79, #f88c5e);
