@@ -37,6 +37,8 @@ li {
   src: url("../Fonts/IRANSansWeb_Black.ttf") format("truetype");
 }
 
+
+
 :root {
   --clr--primary-500: #0aca9b;
   --clr--primary-200: #2bfca4;
