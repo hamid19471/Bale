@@ -114,6 +114,8 @@ img {
   font-weight: 700;
   font-size: 1.8rem;
   margin: 1.5rem 0;
+  color: var(--clr--text-600);
+  text-align: justify;
 }
 .steptwo__text--body {
   text-align: justify;
@@ -173,7 +175,7 @@ img {
 .features__title h4 {
   font-weight: 700;
   font-size: 1.8rem;
-  line-height: 2.8rem;
+  line-height: 1.8rem;
   color: var(--clr--text-600);
 }
 .features__img {
@@ -199,8 +201,8 @@ img {
 .features__title {
   font-weight: bold;
   font-size: 1.6rem;
-  line-height: 2.4rem;
-  margin: 12px 0 8px 0;
+  line-height: 1rem;
+  margin: 2rem 0 2rem auto;
   color: var(--clr--text-600);
 }
 
@@ -210,7 +212,47 @@ img {
   line-height: 2.2rem;
   color: var(--clr--text-100);
 }
-
+.description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #42526e;
+  padding-left: 20px;
+  text-align: justify;
+}
+.warning {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.warning__img {
+  display: flex;
+  flex-direction: column;
+}
+.warning__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.video {
+  display: flex;
+  flex-direction: column;
+}
+.video__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.title__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #091e42;
+}
+.video__play img {
+  border-radius: 1.6rem;
+  margin-top: 2rem;
+}
 @media screen and (min-width: 375px) {
   .stepone {
     flex-direction: column-reverse;
@@ -237,6 +279,13 @@ img {
   }
   img {
     width: 100%;
+  }
+  .title__text {
+    font-size: 2.6rem;
+    line-height: 4.4rem;
+  }
+  .description {
+    font-size: 1.8rem;
   }
 }
 
@@ -334,9 +383,45 @@ img {
     display: flex;
     gap: 1.5rem;
   }
+  .features__title h4 {
+    font-size: 2.6rem;
+  }
+  .warning {
+    flex-direction: row;
+    min-height: 650px;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  .warning__img {
+    max-width: 477px;
+    max-height: 430px;
+  }
+  .warning__text {
+    width: 50%;
+  }
+  .warning__details {
+    gap: 2.5rem;
+  }
+  .warning__text--desk {
+    line-height: 1.6;
+    margin-bottom: 3.5rem;
+  }
+  .video {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .video__text {
+    width: 50%;
+  }
+  .video__play {
+    width: 40%;
+  }
 }
 @media screen and (min-width: 1366px) {
   .navbar {
     width: 1240px;
+  }
+  .features__img {
+    height: 14.4rem;
   }
 }
