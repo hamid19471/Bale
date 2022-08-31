@@ -5,12 +5,13 @@ html {
 
 .container-w {
   max-width: 1240px;
-  padding: 1.2rem 1.2rem;
+  padding: 1.2rem 1.6rem;
   margin: 0 auto;
 }
 .container-fluid {
   width: 100%;
   margin: 0 auto;
+  background-color: #fafbfc;
 }
 
 img {
@@ -216,7 +217,6 @@ img {
   font-size: 16px;
   line-height: 26px;
   color: #42526e;
-  padding-left: 20px;
   text-align: justify;
 }
 .warning {
@@ -253,12 +253,87 @@ img {
   border-radius: 1.6rem;
   margin-top: 2rem;
 }
+.passenger__img {
+  display: none;
+}
+.gray-bg {
+  color: #fafbfc;
+}
+.passenger__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.passenger__text {
+  width: 100%;
+}
+.passenger__text h4 {
+  margin-bottom: 3rem;
+}
+.simcard {
+  justify-content: space-around;
+  flex-direction: column;
+}
+.simcard--img {
+  background-color: #fafbfc;
+  padding: 1.2rem;
+  border-radius: 1.6rem;
+  margin-bottom: 2rem;
+}
+.simcard__img {
+  width: 100%;
+}
+.simcard__details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.simcard__details h4 {
+  margin-bottom: 4rem;
+}
+.m-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #091e42;
+}
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.question__title {
+  margin-bottom: 2.2rem;
+}
+.question__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  cursor: pointer;
+  border-radius: 1.4rem;
+  background-color: #ebecf0;
+}
+.faq__text {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #091e42ک;
+}
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
 @media screen and (min-width: 375px) {
   .stepone {
     flex-direction: column-reverse;
   }
   .steptwo {
     flex-direction: column;
+  }
+  .simcard {
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 768px) {
@@ -283,9 +358,13 @@ img {
   .title__text {
     font-size: 2.6rem;
     line-height: 4.4rem;
+    text-align: justify;
   }
   .description {
     font-size: 1.8rem;
+  }
+  .question__box {
+    padding: 2.5rem;
   }
 }
 
@@ -302,6 +381,24 @@ img {
   }
   .card__step {
     padding: 1.4rem;
+  }
+  .simcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 700px;
+  }
+  .simcard__img {
+    width: 35%;
+  }
+  .simcard__details {
+    width: 50%;
+  }
+  .faq__text {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    color: #091e42;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -409,12 +506,32 @@ img {
   .video {
     flex-direction: row;
     justify-content: space-around;
+    min-height: 450px;
   }
   .video__text {
     width: 50%;
   }
   .video__play {
     width: 40%;
+  }
+  .passenger {
+    justify-content: space-around;
+    min-height: 800px;
+  }
+  .passenger__img {
+    display: block;
+    width: 30%;
+  }
+  .passenger__text {
+    width: 50%;
+  }
+  .description {
+    line-height: 3.6rem;
+  }
+  .m-title {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 2.4rem;
   }
 }
 @media screen and (min-width: 1366px) {
