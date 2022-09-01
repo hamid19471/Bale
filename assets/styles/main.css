@@ -1,3 +1,32 @@
+
+/* fonts  */
+@font-face {
+  font-family: "IranSansUltraLight";
+  src: url("../Fonts/IRANSansWeb_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IranSansLight";
+  src: url("../Fonts/IRANSansWeb_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IranSansMedium";
+  src: url("../Fonts/IRANSansWeb_Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IranSansBold";
+  src: url("../Fonts/IRANSansWeb_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IranSansBlack";
+  src: url("../Fonts/IRANSansWeb_Black.ttf") format("truetype");
+}
+
+html {
+  font-family: "IranSansUltraLight";
+    }
+
 :root {
   --clr--primary-500: #49dbae;
   --clr--primary-200: #2bfca4;
@@ -12,3 +41,149 @@
   --clr--rinbow-gr: linear-gradient(-90deg, #8667d0, #cd42a7, #e94c79, #f88c5e);
   --clr--white: #fff;
 }
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    }
+
+.messaging__services{
+  width: 100%;
+  background-image: url(/assets/images/TriangleShadowright2.png);
+  height: 600px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 57px;
+  /* background-color: #2bfca4; */
+
+}
+.text__titel{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  /* background-color: #161c4e; */
+  /* height: 500px; */
+}
+
+.container__messaging-services{
+  width: 80%;
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: space-around;
+  /* background-color: #2f3776; */
+  /* height: 500px; */
+}
+.messaging-services__mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+   /* background-color: #8667d0; */
+    /* height: 380px; */
+}
+.messaging-services__icone{
+  width: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: flex-start;
+  gap: 19px;
+  justify-content:  flex-end;
+  /* background-color: #cd42a7; */
+  height: 76px;
+  
+}
+.g{
+  width: 35%;
+  /* height: 0px; */
+  /* background-color: #161c4e; */
+  /* border-right: solid 5px #49dbae!important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+  visibility: hidden;
+}
+.d{
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  width: 30%;
+  height: 80px;
+}
+.bale-feature-icon{
+  height: 65px;
+  width: 65px;
+  border-radius: 7px;
+  padding: 14px;
+  box-shadow: var(--clr--text-200);
+  background-color: white;
+  box-shadow: 0 2px 38px -9px rgb(47 55 118 / 50%);
+}
+
+/* .ap-download, .dl, .dl:hover {
+    box-shadow: 0 3px 20px -3px rgb(73 219 175 / 50%);
+} */
+
+.arbaeen-btn ,.link {
+    padding: 0!important;
+    background-color: #313872!important;
+    box-shadow: none!important;
+    border: none!important;
+    margin-top: 6px;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.link a{
+  text-decoration: none;
+  color: #fff;
+}
+.bale-feature-icon:hover  {
+  background-color: #2bfca4;
+  
+  
+}
+.bale__feature{
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  width: 100%;
+  flex-direction: column;
+}
+.messaging-services__icone:hover .g{
+  visibility: visible;
+  
+}
+.messaging-services__icone:hover .mobile-phone{
+  display: block;
+  
+}
+.mobile-phone{
+  display: block;
+}
+.messaging-services__icone:hover .mobile-phone1{
+  display: none;
+  
+}
+.d:hover {
+  border-left: 5px solid rgb(12, 231, 70);
+
+}
+
