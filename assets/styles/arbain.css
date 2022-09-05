@@ -558,6 +558,9 @@ footer {
     border-radius: 3.2rem;
     margin: 3.5rem auto;
   }
+  .reaction {
+    overflow-x: hidden;
+  }
 }
 
 @media only screen and (min-width: 960px) {
