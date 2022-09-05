@@ -36,15 +36,24 @@ li {
   font-family: "IranSansBlack";
   src: url("../Fonts/IRANSansWeb_Black.ttf") format("truetype");
 }
+@font-face {
+  font-family: "ShabnamUltraLight";
+  src: url("../Fonts/IRANSansWeb_UltraLight.ttf") format("truetype");
+}
 
 @font-face {
-  font-family: 'ShabnamLight';
+  font-family: "ShabnamLight";
   src: url("../Fonts/Shabnam-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'ShabnamBold';
-  src: url("../Fonts/Shabnam-Bold.ttf") format('truetype');
+  font-family: "ShabnamMedium";
+  src: url("../Fonts/IRANSansWeb_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ShabnamBold";
+  src: url("../Fonts/Shabnam-Bold.ttf") format("truetype");
 }
 
 :root {
