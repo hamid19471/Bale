@@ -27,6 +27,8 @@ img {
 }
 .header {
   background-color: #f7f7f7;
+  position: fixed;
+  top: 0;
 }
 .navbar {
   display: flex;
@@ -294,15 +296,17 @@ img {
   margin-bottom: 4rem;
 }
 .m-title {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1.8rem;
   line-height: 2.8rem;
   color: #091e42;
+  font-family: "ShabnamBold";
 }
 .icon {
   width: 2.4rem;
   height: 2.4rem;
 }
+
 .question__title {
   margin-bottom: 2.2rem;
 }
@@ -318,13 +322,182 @@ img {
 .faq__text {
   font-size: 1.4rem;
   line-height: 2.2rem;
-  color: #091e42ک;
+  color: #091e42;
+  font-family: "ShabnamLight";
 }
 .faq__wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 0.8rem;
 }
+.border--light {
+  border: 1px solid #dfe1e6;
+  border-radius: 1.2rem;
+  width: 300px;
+}
+.reaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  min-height: 28rem;
+}
+.reaction__title {
+  align-self: flex-start;
+}
+.reaction__tweet {
+  display: flex;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+.blog__card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  color: #5e6c84;
+  flex: 1;
+  border: 1px solid #dfe1e6;
+  min-width: 20rem;
+  gap: 1.2rem;
+}
+.blog__card > img {
+  border-radius: 1rem;
+  width: 100%;
+}
+.blog__card h5 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+}
+.blog__card p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: justify;
+}
+.blog__details {
+  margin-top: 1.8rem;
+}
+.blog__details a {
+  font-size: 1.6rem;
+  color: #238ff3;
+}
+.blog__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog__img {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.appstores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  box-shadow: 0px 0px 15px rgba(47 55 118 /6%);
+  padding: 3.2rem 1.6rem;
+  margin: 6.4rem 2rem;
+  border-radius: 1.6rem;
+}
+.appstore__details {
+  text-align: center;
+  margin: 2rem 0;
+}
+.appstore__img {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 4rem 0;
+}
+.appstore__img > a {
+  width: 50%;
+  margin: 0 auto;
+}
+.footer__side {
+  display: flex;
+  align-items: center;
+}
+footer {
+  background-color: #fafbfc;
+  min-height: 30rem;
+  display: flex;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+.footer__title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #091e42;
+  margin-bottom: 1.2rem;
+}
+.footer__sub {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #5e6c84;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.col-1 {
+  margin-bottom: 2.2rem;
+}
+.bold {
+  font-family: "ShabnamBold";
+}
+.footer__icon {
+  display: flex;
+  gap: 1.5rem;
+}
+.divider {
+  border: 1px solid #dfe1e6;
+  height: 80%;
+  margin: 1.5rem 0;
+}
+/* Videp */
+.remo {
+  outline: none;
+  display: block;
+  max-width: 100%;
+  background-color: #000;
+  direction: ltr;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 10px;
+  font-size: calc(10px + 6 * (100vw - 300px) / 1300);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  word-break: normal;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 375px) {
   .stepone {
     flex-direction: column-reverse;
@@ -336,7 +509,7 @@ img {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 840px) {
   .container-desk {
     max-width: 1290px;
     display: flex;
@@ -362,9 +535,28 @@ img {
   }
   .description {
     font-size: 1.8rem;
+    font-family: "ShabnamLight";
   }
   .question__box {
     padding: 2.5rem;
+  }
+  .border--light {
+    width: 400px;
+  }
+  .reaction__title {
+    margin-right: 2.5rem;
+  }
+  .blog__img {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .appstore__img {
+    flex-direction: row;
+  }
+  .appstores {
+    border-radius: 3.2rem;
+    margin: 3.5rem auto;
   }
 }
 
@@ -399,6 +591,15 @@ img {
     line-height: 2.8rem;
     font-weight: bold;
     color: #091e42;
+  }
+  .blog {
+    min-height: 60rem;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .features__title {
+    margin-bottom: 4rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -532,6 +733,12 @@ img {
     font-size: 2.6rem;
     line-height: 3.2rem;
     margin-bottom: 2.4rem;
+  }
+  .question {
+    min-height: 65rem;
+  }
+  .reaction {
+    min-height: 45rem;
   }
 }
 @media screen and (min-width: 1366px) {
