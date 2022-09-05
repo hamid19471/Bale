@@ -374,40 +374,130 @@ html {
 }
 
 /* footer bootom */
-.footer-botom {
+
+
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  /* box-shadow: none; */
-  border-top: 5px solid #4c5b7b;
-  background-color: #35415d;
   background-image: url(/assets/images/tri_right_dark.png);
   background-repeat: no-repeat;
   background-position: right bottom, left bottom;
   background-size: contain;
+  border-top: 5px solid #4c5b7b;
+  background-color: #35415d;
   color: rgba(198, 213, 222, .24);
-  height: 300px;
+  height:300px;
+
 }
-.footer-botom__logo{
-  
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  row-gap: 15px;
+}
+
+.footer-content__logo,
+.footer-content__link{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 15px;
+  /* width: 25%; */
 }
-.footer-botom__logo img{
-  height: 37px;
+
+.footer-content__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
-.footer-botom__etemad img{
-  height: 90px;
+
+.footer-content__link__social {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
-.link a , .links a{
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-}
-.links a{
-  
+
+.fa-telegram:before {
+  content: "\f2c6";
   font-size: 19px;
 }
+
+.fa-instagram:before {
+  content: "\f16d";
+  font-size: 19px;
+}
+
+.footer-content__logo img {
+  height: 37px;
+}
+
+.footer-content__links a,
+.footer-content__link__social a,
+.footer-content__logo > p {
+  text-decoration: none;
+  color: #c6d5de;
+  font-size: 13px;
+}
+
+.footer-content__etemad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-content__etemad img{
+  height: 100px;
+  width: 95px;
+}
+ @media (min-width:768px) {
+  .footer-content {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start
+  }
+ 
+footer{
+  justify-content: flex-end;
+}
+  .footer-content__logo {
+    align-items: flex-end;
+  }
+
+  .footer-content__link {
+    align-items: flex-start;
+  }
+}
+
+ @media (min-width:900px) {
+  .footer-content {
+    justify-content: flex-start;
+    width: 75%;
+
+  }
+
+  .footer-content__etemad {
+  width: 14%;
+  } 
+  .footer-content__etemad img{
+    height: 150px;
+    width: 120px;
+    
+  }
+  }
+
+  @media (min-width:1200px) {
+    .footer-content {
+      gap: 24px;
+      justify-content: flex-start;
+    }
+   
+    .footer-content__link{
+      width: 52%;
+    }
+    }
