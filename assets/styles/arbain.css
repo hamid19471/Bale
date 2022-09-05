@@ -61,6 +61,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 10rem;
   min-height: 600px;
 }
 .stepone__text {
@@ -470,32 +471,6 @@ footer {
   border: 1px solid #dfe1e6;
   height: 80%;
   margin: 1.5rem 0;
-}
-/* Videp */
-.remo {
-  outline: none;
-  display: block;
-  max-width: 100%;
-  background-color: #000;
-  direction: ltr;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 10px;
-  font-size: calc(10px + 6 * (100vw - 300px) / 1300);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  word-break: normal;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 375px) {
